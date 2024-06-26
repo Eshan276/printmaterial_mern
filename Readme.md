@@ -30,8 +30,8 @@ This project is a Node.js backend that manages information about various 3D prin
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/yourusername/3d-printing-materials-api.git
-   cd 3d-printing-materials-api
+   git clone https://github.com/Eshan276/printmaterial_mern.git
+   cd printmaterial_mern
    ```
 
 2. Install the dependencies:
