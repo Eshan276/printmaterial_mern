@@ -52,6 +52,7 @@ This project is a Node.js backend that manages information about various 3D prin
    AWS_REGION=your_aws_region
    S3_BUCKET_NAME=your_s3_bucket_name
    ```
+2. For easier use I have provided the env my self
 
 ## Running the Server
 
