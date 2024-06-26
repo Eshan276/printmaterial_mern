@@ -15,8 +15,8 @@ This project is a Node.js backend that manages information about various 3D prin
 
 ## API Documentation
 
-Postman- https://documenter.getpostman.com/view/30488948/2sA3drJaiJ
-Drive- https://drive.google.com/file/d/19LrXw6pXU7k7WAEOt1es8WevV7HdcmCe/view?usp=sharing
+-Postman- https://documenter.getpostman.com/view/30488948/2sA3drJaiJ
+-Drive- https://drive.google.com/file/d/19LrXw6pXU7k7WAEOt1es8WevV7HdcmCe/view?usp=sharing
 
 ## Prerequisites
 
