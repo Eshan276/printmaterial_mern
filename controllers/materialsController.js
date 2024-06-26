@@ -37,7 +37,7 @@ exports.getMaterialById = async (req, res) => {
 
 // Create a new material
 exports.createMaterial = async (req, res) => {
-  const { name, technology, colors, pricePerGram } = req.body;
+  const { name, technology, colors, pricePerGram, applicationTypes } = req.body;
   const imageUrl = req.file ? req.file.location : "";
   console.log("req.file", req.file);
   console.log("imageUrl", imageUrl);
@@ -46,6 +46,7 @@ exports.createMaterial = async (req, res) => {
     technology,
     colors,
     pricePerGram,
+    applicationTypes,
     imageUrl,
   });
 
@@ -59,7 +60,7 @@ exports.createMaterial = async (req, res) => {
 
 // Update material
 exports.updateMaterial = async (req, res) => {
-  const { name, technology, colors, pricePerGram } = req.body;
+  const { name, technology, colors, pricePerGram, applicationTypes } = req.body;
 
   try {
     const material = await Material.findById(req.params.id);
@@ -70,6 +71,7 @@ exports.updateMaterial = async (req, res) => {
     material.technology = technology || material.technology;
     material.colors = colors || material.colors;
     material.pricePerGram = pricePerGram || material.pricePerGram;
+    material.applicationTypes = applicationTypes || material.applicationTypes;
     if (req.file) material.imageUrl = req.file.location;
 
     const updatedMaterial = await material.save();

@@ -5,6 +5,7 @@ const MaterialSchema = new mongoose.Schema({
   technology: { type: String, required: true },
   colors: { type: [String], required: true },
   pricePerGram: { type: Number, required: true },
+  applicationTypes: { type: [String], required: true },
   imageUrl: { type: String, required: true },
 });
 
